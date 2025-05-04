@@ -24,9 +24,9 @@ Below is a list of all the projects, along with brief descriptions and links to 
 
 | Project Name     | Description                                    | Link                             |
 | ---------------- | ---------------------------------------------- | -------------------------------- |
-| `Saycheese` | A guess the number game in qr code. | [View Project](./project-name-1) |
-| `Cafe` | Another project with something cool.           | [View Project](./project-name-2) |
-| `RPG`            | A react website and others                             | [view Project](./#)|                          |
+| `Saycheese` | A guess the number game in qr code. | [View Project](https://github.com/Praveenkushinpi/HACKCLUB_YSWS_PROJECTS_ARCHIVE/tree/main/Saycheese-guessthenumberinqr-main/Saycheese-guessthenumberinqr-main ) |
+| `Cafe` | Another project with something cool.           | [View Project](https://github.com/Praveenkushinpi/HACKCLUB_YSWS_PROJECTS_ARCHIVE/tree/main/Cafe_hackclub-main/Cafe_hackclub-main) |
+| `RPG`            | A react website and others                             | [view Project](https://github.com/Praveenkushinpi/HACKCLUB_YSWS_PROJECTS_ARCHIVE/tree/main/RPG.github.io-main/RPG.github.io-main)|                          |
 |`more`| coming soon|[view Project](./#)|
 
 > 📌 *Note: Each project contains its own `README.md` with more details, instructions, and any relevant screenshots or media.*
