@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Minimal Website</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border: 3px solid black;
+        }
+        h1 {
+            color: blue;
+            text-shadow: 2px 2px 0px yellow;
+        }
+        .blink {
+            animation: blink 1s step-start infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .nav {
+            margin: 20px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 15px;
+            border: 2px solid black;
+            background: #ffcc00;
+        }
+        .nav a:hover {
+            background: lime;
+        }
+        .marquee {
+            background: blue;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <marquee>Welcome to My Awesome 90s Website!</marquee>
+    </div>
+    <div class="container">
+        <h1 class="blink">90s Minimal Web</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <p>Welcome to the world of the 90s! Enjoy the retro vibes.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Windows_95_logo.png" alt="Windows 95 Logo" width="200">
+    </div>
+</body>
+</html>

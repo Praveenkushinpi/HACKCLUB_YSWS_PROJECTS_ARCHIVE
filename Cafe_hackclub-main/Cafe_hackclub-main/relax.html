@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxing Nature Scenes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .scene {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-size: cover;
+            background-position: center;
+            animation: moveBackground 20s linear infinite;
+        }
+        .forest {
+            background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        .sea {
+            background: url('https://images.pexels.com/photos/127673/pexels-photo-127673.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        .mountains {
+            background: url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        .desert {
+            background: url('https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        .waterfall {
+            background: url('https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        @keyframes moveBackground {
+            0% { background-position: left center; }
+            50% { background-position: right center; }
+            100% { background-position: left center; }
+        }
+        .leaf {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/3/36/Simple_green_leaf.svg') no-repeat center;
+            background-size: contain;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            from { transform: translateY(-10vh) rotate(0); }
+            to { transform: translateY(110vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="scene forest">
+        <h1>Welcome to Nature's Serenity</h1>
+        <p>Relax, breathe, and enjoy the soothing forest environment.</p>
+    </div>
+    <div class="scene sea">
+        <h1>Embrace the Ocean's Tranquility</h1>
+        <p>Feel the calm waves and refreshing breeze.</p>
+    </div>
+    <div class="scene mountains">
+        <h1>Discover the Majestic Mountains</h1>
+        <p>Breathe in the fresh air and admire the breathtaking peaks.</p>
+    </div>
+    <div class="scene desert">
+        <h1>Experience the Vast Desert</h1>
+        <p>Witness the golden dunes and endless horizons.</p>
+    </div>
+    <div class="scene waterfall">
+        <h1>Feel the Power of Waterfalls</h1>
+        <p>Listen to the soothing sound of cascading water.</p>
+    </div>
+    <script>
+        function createLeaf() {
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            document.body.appendChild(leaf);
+            leaf.style.left = Math.random() * 100 + 'vw';
+            leaf.style.animationDuration = (5 + Math.random() * 5) + 's';
+            setTimeout(() => leaf.remove(), 10000);
+        }
+        setInterval(createLeaf, 500);
+    </script>
+</body>
+</html>

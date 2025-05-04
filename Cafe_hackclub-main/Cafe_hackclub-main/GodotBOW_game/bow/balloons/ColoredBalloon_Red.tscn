@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci4vywmnpjtfj"]
+
+[ext_resource type="Script" path="res://scripts/balloons/ColoredBalloon_Red.gd" id="1_h3e0r"]
+
+[node name="ColoredBalloon_Red" type="Node2D"]
+script = ExtResource("1_h3e0r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

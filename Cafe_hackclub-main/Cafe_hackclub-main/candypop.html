@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch The Sweet</title>
+  
+  <link rel="stylesheet" href="candypop/candy.css">
+</head>
+<body>
+  <div class="screen">
+    <h1>Catch The Sweet</h1>
+    <button class="btn" id="start-btn">Start Cathcng</button>
+  </div>
+
+  <div class="screen">
+    <h1>What is your "favorite" sweet?</h1>
+    <ul class="sweets-list">
+      <li>
+        <button class="choose-sweet-btn">
+          <p>Chocolate</p>
+          <img src="candypop/img/chocolate.png" alt="chocolate"/>
+        </button>
+      </li>
+      <li>
+        <button class="choose-sweet-btn">
+          <p>Toffee</p>
+          <img src="candypop/img/toffee.jpeg" alt="toffee"/>
+        </button>
+      </li>
+      <li>
+        <button class="choose-sweet-btn">
+          <p>Candy Cane</p>
+          <img src="candypop/img/cane.jpg" alt="candy cane"/>
+        </button>
+      </li>
+      <li>
+        <button class="choose-sweet-btn">
+          <p>Donut</p>
+          <img src="candypop/img/dougnt.png" alt="donut"/>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="screen game-container" id="game-container">
+    <h3 id="time" class="time">Time: 00:00</h3>
+    <h3 id="score" class="score">Score: 0</h3>
+    <h5 id="message" class="message">Are you craving more sweets? <br /> You are playing an irresistible game!!</h5>
+    <button class="btn" id="back-btn">Back to Main Menu</button>
+  </div>
+
+  <script src="candypop/pop.js"></script>
+</body>
+</html>
