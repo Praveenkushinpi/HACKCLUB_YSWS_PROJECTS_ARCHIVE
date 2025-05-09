@@ -1,136 +1,240 @@
-
-    :root {
-      --bg-color: linear-gradient(to bottom right, #ffffff, #eeeeee);
-      --text-color: #000;
-      --emoji-size: 2rem;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      transition: all 0.5s ease;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-    }
-
-    .emoji-bar {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-
-    .emoji-btn {
-      font-size: var(--emoji-size);
-      cursor: pointer;
-      border: none;
-      background: none;
-      transition: transform 0.2s;
-    }
-
-    .emoji-btn:hover {
-      transform: scale(1.3);
-    }
-
-    .mood-card {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-
-    .quotes-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-
-    .quote {
-      flex: 1 1 200px;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 0.75rem;
-      font-style: italic;
-      font-size: 0.95rem;
-    }
-
-    .rotating {
-      display: inline-block;
-      animation: spin 4s linear infinite;
-      font-size: 2rem;
-      margin-top: 1rem;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    @media (max-width: 600px) {
-      .emoji-bar {
-        display: flex;
-        overflow-x: auto;
-        gap: 0.5rem;
-        justify-content: center;
-      }
-   .image-container {
-    display: flex;
-    justify-content: center; /* Center the flexbox content horizontally */
-    align-items: center;     /* Center the flexbox content vertically */
-    flex-direction: column;  /* Stack images vertically */
-    gap: 1rem;               /* Add space between the images */
-    padding: 2rem 0;
-  }
-
-  /* Flexbox layout for images */
-  .flex-images {
-    display: flex;
-    justify-content: center; /* Center the images in the flex container */
-    gap: 1rem;               /* Space between images */
-    flex-wrap: wrap;         /* Allow images to wrap when screen size is small */
-  }
-
-  /* Make images responsive */
-  img.responsive {
-    width: 100%;
-    max-width: 500px;        /* Max width for images */
-    height: auto;
-    transition: all 0.5s ease;
-    display: none;           /* Hide all images initially */
-  }
-
-  /* Media Query for smaller screens */
-  @media (max-width: 600px) {
-    img.responsive {
-      max-width: 300px;      /* Reduce the max-width for smaller screens */
-    }
-  }
-
-  /* Media Query for very small screens */
-  @media (max-width: 400px) {
-    img.responsive {
-      max-width: 200px;      /* Further reduce the max-width */
-    }
-
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  overflow-x: hidden;
 }
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.floating-boba-5 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 17%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-6 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-7 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-8 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-1 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-2 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 90%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-3 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba-4 {
+  width: 40px;
+  height: 40px;
+  background: #6a0572;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  animation: floatUp 8s infinite linear;
+  opacity: 0.7;
+}
+
+.floating-boba.delay {
+  animation-delay: 4s;
+  left: 60%;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.8);
+  }
+}
+
+/* Responsive changes */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    font-size: 0.9rem;
+  }
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdaec;
+}
+
+.about-section, .flavor-section {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2rem 1rem;
+  border-radius: 10px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://transparenttextures.com/patterns/starring.png');
+  opacity: 0.3;
+  z-index: -1;
+  animation: scrollStars 60s linear infinite;
+}
+
+@keyframes scrollStars {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+.flavor-button {
+  background-color: #fff;
+  color: #6a0572;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flavor-button:hover {
+  background-color: #6a0572;
+  color: #fff;
+}
+
+.fake-response {
+  margin-top: 1rem;
+  font-style: italic;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
