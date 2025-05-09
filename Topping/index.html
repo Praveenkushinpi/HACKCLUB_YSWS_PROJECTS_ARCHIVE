@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodMorph</title>
+    <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <h1 id="moodTitle">Choose Your Mood</h1>
+    <div class="emoji-bar">
+      <button class="emoji-btn" onclick="setMood('happy')">😄</button>
+      <button class="emoji-btn" onclick="setMood('sad')">😢</button>
+      <button class="emoji-btn" onclick="setMood('angry')">😡</button>
+      <button class="emoji-btn" onclick="setMood('cool')">😎</button>
+      <button class="emoji-btn" onclick="setMood('brainy')">🧠</button>
+    </div>
+    <div class="mood-card" id="moodCard">
+      <p id="moodDescription">Your mood will reflect here!</p>
+      <div id="rotatingIcon"></div>
+    </div>
+    <div class="quotes-container" id="quotes">
+      <!-- Quotes will be inserted here -->
+    </div>
+  </div>
+<div class="image-container">
+   <div class="flex-images">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3gxdHlzZDRqaG1oeTV0dnc3bXQ4eG9kYW5pcmwwYjU2OXJhYmswZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/loUqCMSfXHcsVb3cUZ/giphy.gif" alt="Image 1" class="responsive" id="moodImage1" />
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXJlM3UxcHhlNHZoYW84aWxvdjlnaGJsM3VjZnVoN2JhY3JvNWtsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MUHNdrm3vk7MoyUsCO/giphy.gif" alt="Image 2" class="responsive" id="moodImage2" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDk3NWJwajUyamFjMG03eXk2bzhxcXhsM3Q3OXJiaDM3Z2d6aGZ0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qw4X3FvQloGzpQju1qM/giphy.gif" alt="Image 3" class="responsive" id="moodImage3" />
+</div>
+  </div>
+</div>
+<script src="mood.js"></script>
+
+</body>
+</html>
