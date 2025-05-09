@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MoodMorph</title>
-    <link rel="stylesheet" href="style.css" />
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boba Planet</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body
-      <div id="emoji-rain-container">
+<body>
+  <nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#flavors">Flavors</a></li>
+  </ul>
+</nav>
 
-  <div class="container">
-    <h1 id="moodTitle">Choose Your Mood</h1>
-    <div class="emoji-bar">
-      <button class="emoji-btn" onclick="setMood('happy')">😄</button>
-      <button class="emoji-btn" onclick="setMood('sad')">😢</button>
-      <button class="emoji-btn" onclick="setMood('angry')">😡</button>
-      <button class="emoji-btn" onclick="setMood('cool')">😎</button>
-      <button class="emoji-btn" onclick="setMood('brainy')">🧠</button>
-    </div>
-    <div class="mood-card" id="moodCard">
-      <p id="moodDescription">Your mood will reflect here!</p>
-      <div id="rotatingIcon"></div>
-    </div>
-    <div class="quotes-container" id="quotes">
-      <!-- Quotes will be inserted here -->
-    </div>
-  </div>
-<div class="image-container">
-   <div class="flex-images">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTdkcXhlM25qN2c1NDI5c2h1emowbnRyaWhxb2EwNngybHp1bHNhdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9DPnxOqFNu0vObyU/giphy.gif" alt="Image 1" class="responsive" id="moodImage1" />
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDc5OWE0b3RoOTg1N3g0aHA0M244eDJvZG44anUwN2RhOXIxaThiaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D81ZtVnn5Orio/giphy.gif" alt="Image 2" class="responsive" id="moodImage2" />
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmpseWlhbWtnbnZ1ejVrZDhkbzYzd3FsaHV4bGptYmJham5nNHlncSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OZbGrdp7FiDiE/giphy.gif" alt="Image 3" class="responsive" id="moodImage3" />
-</div>
-  </div>
-</div>
-</div>
-<script src="mood.js"></script>
+  <header>
+    <h1>🌌 Welcome to Boba Planet 🧋</h1>
+    <p>Where bubble tea flows from volcanoes and tapioca orbits in space!</p>
+  </header>
 
+  <section class="grid-container">
+    <div class="card">
+      <h2>Galactic Tapioca</h2>
+      <p>Enjoy pearls from other galaxies — chewy, cosmic, and delicious.</p>
+    </div>
+    <div class="card">
+      <h2>Flavor Nebula</h2>
+      <p>Pick from a cloud of flavors: lychee, matcha, taro, and more.</p>
+    </div>
+    <div class="card">
+      <h2>Boba Planet</h2>
+      <p>Just a Big BOBA Ball</p>
+    </div>
+  </section>
+  <section id="about" class="about-section">
+  <h2>👽 About Boba Planet</h2>
+  <p>
+    Founded by starry-eyed baristas, Boba Planet serves intergalactic joy with every sip.
+    No grant. No gimmicks. Just tapioca-powered dreams.
+  </p>
+</section>
+
+<section id="flavors" class="flavor-section">
+  <h2>🎲 Feeling Lucky?</h2>
+  <button class="flavor-button">Try a Random Flavor!</button>
+  <p class="fake-response">💡 You got... Cosmic Lychee!</p>
+</section>
+
+  <footer>
+    <p>✨ Boba Planet © 2025 – No grants, just good vibes ✨</p>
+  </footer>
+
+  <div class="floating-boba"></div>
+   <div class="floating-boba-1"></div>
+   <div class="floating-boba-2"></div>
+   <div class="floating-boba-3"></div>
+   <div class="floating-boba-4"></div>
+   <div class="floating-boba-5"></div>
+   <div class="floating-boba-6"></div>
+   <div class="floating-boba-7"></div>
+   <div class="floating-boba-8"></div>
+   <div class="floating-boba-9"></div>
+  <div class="floating-boba delay"></div>
 </body>
 </html>
+
