@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HackaCola - Premium Cola Brand</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Limelight&family=Orbitron:wght@400..900&family=Pattaya&family=Racing+Sans+One&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.0/cdn.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
     .brand-font { font-family: 'Pattaya', sans-serif; }
     .menu-font { font-family: 'Limelight', cursive; }
@@ -40,7 +40,7 @@
 <body class="bg-gray-50">
 
   <nav class="bg-white sticky top-0 z-50 shadow-lg" x-data="{ mobileMenuOpen: false }">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex items-center">
           <a href="#" class="text-4xl brand-font text-red-600 hover:text-red-700 transition-colors duration-300">HACk-A-COLA</a>
@@ -51,7 +51,6 @@
           <a href="#products" class="menu-font text-gray-700 hover:text-red-600 hover:scale-110 transition-all duration-300 text-xl">Products</a>
           <a href="#features" class="menu-font text-gray-700 hover:text-red-600 hover:scale-110 transition-all duration-300 text-xl">Features</a>
           <a href="#testimonials" class="menu-font text-gray-700 hover:text-red-600 hover:scale-110 transition-all duration-300 text-xl">Testimonials</a>
-          
         </div>
   
         <div class="md:hidden flex items-center">
@@ -65,20 +64,17 @@
       </div>
     </div>
 
-    <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4" class="md:hidden px-4 pb-4 bg-white">
+    <div x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform -translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 transform translate-y-0" x-transition:leave-end="opacity-0 transform -translate-y-4" class="md:hidden container mx-auto px-4 pb-4 bg-white">
       <a href="#home" class="block cta-font text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg px-3 py-2 transition-colors">Home</a>
       <a href="#products" class="block cta-font text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg px-3 py-2 transition-colors">Products</a>
       <a href="#features" class="block cta-font text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg px-3 py-2 transition-colors">Features</a>
       <a href="#testimonials" class="block cta-font text-gray-700 hover:text-red-600 hover:bg-red-50 rounded-lg px-3 py-2 transition-colors">Testimonials</a>
-    
     </div>
   </nav>
 
-
   <section id="home" class="bg-gradient-to-br from-white via-red-100 to-red-300 py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row items-center">
- 
         <div class="lg:w-1/2 mb-10 lg:mb-0">
           <h2 class="heading-font text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">
             Welcome to
@@ -99,7 +95,6 @@
           </div>
         </div>
         
-
         <div class="lg:w-1/2 relative">
           <div class="relative overflow-hidden rounded-3xl shadow-2xl transform hover:rotate-3 transition-transform duration-500">
             <img src="img/output.jpg" alt="HackaCola Bottle" class="w-full h-auto rounded-3xl object-cover"/>
@@ -115,17 +110,14 @@
     </div>
   </section>
 
-
   <section id="products" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="heading-font text-4xl text-center font-bold text-gray-900 mb-12">Our Premium Cola Products</h2>
       
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
         <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
           <div class="relative">
-            <img src="img/hackacola.png" alt="Classic Cola" class="w-full h-64 object-cover"/>
+            <img src="img/hackacola.png" alt="Classic Cola" class="w-full aspect-video object-cover"/>
             <div class="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full">Best Seller</div>
           </div>
           <div class="p-6">
@@ -138,10 +130,9 @@
           </div>
         </div>
         
-
         <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
           <div class="relative">
-            <img src="img/bluecola.jpg" alt="Cherry Cola" class="w-full h-64 object-cover"/>
+            <img src="img/bluecola.jpg" alt="Cherry Cola" class="w-full aspect-video object-cover"/>
             <div class="absolute top-4 right-4 bg-purple-600 text-white text-sm font-bold py-1 px-3 rounded-full">New</div>
           </div>
           <div class="p-6">
@@ -156,7 +147,7 @@
 
         <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
           <div class="relative">
-            <img src="img/zero cola.jpg" alt="Zero Sugar Cola" class="w-full h-64 object-cover"/>
+            <img src="img/zero cola.jpg" alt="Zero Sugar Cola" class="w-full aspect-video object-cover"/>
             <div class="absolute top-4 right-4 bg-blue-600 text-white text-sm font-bold py-1 px-3 rounded-full">Sugar Free</div>
           </div>
           <div class="p-6">
@@ -173,12 +164,10 @@
   </section>
 
   <section id="features" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="heading-font text-4xl text-center font-bold text-gray-900 mb-12">Why Choose HackaCola?</h2>
       
-   
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-  
         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
           <div class="bg-red-100 p-4 rounded-full mb-4">
             <img src="img/natural.png" alt="Natural Ingredients Icon" class="h-10 w-10" />
@@ -195,7 +184,6 @@
           <p class="text-gray-600">Our proprietary blend creates a taste experience unlike any other cola.</p>
         </div>
         
-   
         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
           <div class="bg-red-100 p-4 rounded-full mb-4">
           <img src="img/sustainability.png" alt="Sustainably" class="h-10 w-10" />
@@ -212,7 +200,6 @@
           <p class="text-gray-600">Enjoy fast shipping with our premium delivery service.</p>
         </div>
         
-      
         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
           <div class="bg-red-100 p-4 rounded-full mb-4">
            <img src="img/money.png" alt="Money" class="h-10 w-10" />
@@ -221,7 +208,6 @@
           <p class="text-gray-600">Not satisfied? We offer a 100% money-back guarantee on all our products.</p>
         </div>
         
-      
         <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
           <div class="bg-red-100 p-4 rounded-full mb-4">
             <img src="img/customer.png" alt="Customer" class="h-10 w-10" />
@@ -233,14 +219,11 @@
     </div>
   </section>
 
-
   <section id="testimonials" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="heading-font text-4xl text-center font-bold text-gray-900 mb-12">What Our Customers Say</h2>
       
-
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
- 
         <div class="bg-gray-50 p-6 rounded-xl shadow-md relative hover:shadow-xl transition-shadow">
           <div class="absolute -top-6 left-6">
             <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center">
@@ -250,7 +233,7 @@
           <div class="pt-8">
             <p class="text-gray-600 italic mb-4">HackaCola is simply the best cola I've ever tasted. The natural ingredients really make a difference, and I love supporting a company that prioritizes sustainability.</p>
             <div class="flex items-center">
-         <img src="img/Sarah.png" alt="Sarah Johnson" class="w-10 h-10 rounded-full mr-3 object-cover" />
+              <img src="img/Sarah.png" alt="Sarah Johnson" class="w-10 h-10 rounded-full mr-3 object-cover" />
               <div>
                 <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
                 <p class="text-gray-500 text-sm">Loyal Customer</p>
@@ -259,7 +242,6 @@
           </div>
         </div>
         
-     
         <div class="bg-gray-50 p-6 rounded-xl shadow-md relative hover:shadow-xl transition-shadow">
           <div class="absolute -top-6 left-6">
             <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center">
@@ -269,7 +251,7 @@
           <div class="pt-8">
             <p class="text-gray-600 italic mb-4">I switched to HackaCola Zero months ago and haven't looked back. It's the only zero-sugar cola that actually tastes like the real thing. Absolutely amazing!</p>
             <div class="flex items-center">
-            <img src="img/Michael.png" alt="Michael Chang" class="w-10 h-10 rounded-full mr-3 object-cover" />
+              <img src="img/Michael.png" alt="Michael Chang" class="w-10 h-10 rounded-full mr-3 object-cover" />
               <div>
                 <h4 class="font-bold text-gray-900">Michael Chang</h4>
                 <p class="text-gray-500 text-sm">Fitness Enthusiast</p>
@@ -278,7 +260,6 @@
           </div>
         </div>
         
-
         <div class="bg-gray-50 p-6 rounded-xl shadow-md relative hover:shadow-xl transition-shadow">
           <div class="absolute -top-6 left-6">
             <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center">
@@ -288,7 +269,7 @@
           <div class="pt-8">
             <p class="text-gray-600 italic mb-4">Cherry Burst is my absolute favorite drink for parties. It's always a hit with guests, and I love that it contains no artificial colors or flavors. Perfect!</p>
             <div class="flex items-center">
-           <img src="img/Jessica.png" alt="Jessica" class=" h-10 rounded-full mr-3 object-cover" />
+              <img src="img/Jessica.png" alt="Jessica" class="w-10 h-10 rounded-full mr-3 object-cover" />
               <div>
                 <h4 class="font-bold text-gray-900">Jessica Miller</h4>
                 <p class="text-gray-500 text-sm">Party Host</p>
@@ -301,50 +282,44 @@
   </section>
 
   <footer class="bg-gray-900 text-gray-100 py-10 mt-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-
-      <div>
-        <h2 class="text-2xl font-bold mb-2">HackaCola</h2>
-        <p class="text-sm text-gray-400">The future of refreshment. Crafted with care, fueled by innovation.</p>
-      </div>
-
-  
-      <div>
-        <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#features" class="hover:text-white transition">Features</a></li>
-          <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
-          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
-         <li><a href="https://www.flaticon.com/free-icons/food-and-restaurant" class="hover:text-white transition" title="food and restaurant icons">Food and restaurant icons created by Anastassiya Motokhova - Flaticon</a></li>
-          <li><a href="https://www.flaticon.com/free-stickers/people" class="hover:text-white transition" title="people stickers">People stickers created by Stickers - Flaticon</a></li>
-        </ul>
-      </div>
-
-     
-      <div>
-        <h3 class="text-lg font-semibold mb-3">Connect With Us</h3>
-        <div class="flex space-x-4 items-center">
-          <a href="#" aria-label="Twitter">
-            <img src="img/instagram.png" alt="Twitter" class="h-6 w-6 hover:opacity-80 transition" />
-          </a>
-          <a href="#" aria-label="Instagram">
-            <img src="img/instagram.png" alt="Instagram" class="h-6 w-6 hover:opacity-80 transition" />
-          </a>
-          <a href="#" aria-label="GitHub">
-            <img src="img/github.png" alt="GitHub" class="h-6 w-6 hover:opacity-80 transition" />
-          </a>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">HackaCola</h2>
+          <p class="text-sm text-gray-400">The future of refreshment. Crafted with care, fueled by innovation.</p>
+        </div>
+    
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/food-and-restaurant" class="hover:text-white transition" title="food and restaurant icons">Food and restaurant icons created by Anastassiya Motokhova - Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-stickers/people" class="hover:text-white transition" title="people stickers">People stickers created by Stickers - Flaticon</a></li>
+          </ul>
+        </div>
+    
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Connect With Us</h3>
+          <div class="flex space-x-4 items-center">
+            <a href="#" aria-label="Twitter">
+              <img src="img/instagram.png" alt="Twitter" class="h-6 w-6 hover:opacity-80 transition" />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="img/instagram.png" alt="Instagram" class="h-6 w-6 hover:opacity-80 transition" />
+            </a>
+            <a href="#" aria-label="GitHub">
+              <img src="img/github.png" alt="GitHub" class="h-6 w-6 hover:opacity-80 transition" />
+            </a>
+          </div>
         </div>
       </div>
-
+      
+      <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        &copy; 2025 HackaCola. All rights reserved.
+      </div>
     </div>
-
-    
-    <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
-      &copy; 2025 HackaCola. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-  </body>
+  </footer>
+</body>
+</html>
